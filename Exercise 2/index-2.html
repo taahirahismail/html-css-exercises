@@ -201,6 +201,294 @@
                 <td>50</td>
             </tr>
         </table>
+
+        <table style="width: 300px">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill Smith</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-77854</td>
+            </tr>
+            <tr>
+                <td>555-77854</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="lists">
+        <ul>
+            <li>Coffee</li>
+        </ul>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <ul style="list-style-type: square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>-black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>-white cold drink</dd>
+        </dl>
+    </div>
+
+    <div class="classes">
+        <!-- <head> -->
+        <style>
+            .special {
+                color: blue;
+            }
+        </style>
+        <!-- </head> -->
+        <!-- <body> -->
+            <p class="special">My paragraph</p>
+        <!-- </body> -->
+
+        <!-- <head> -->
+        <style>
+            .mystyle {color:red;}
+        </style>
+        <!-- </head> -->
+        <!-- <body> -->
+        <h1 class="mystyle">My Home Page</h1>
+        <!-- </body> -->
+
+        <!-- <head> -->
+        <style>
+            .intro {background: pink;}
+            .special {color:red;}
+        </style>
+        <!-- </head> -->
+        <!-- <body> -->
+        <h1 class="intro special">My Home Page</h1>   
+    </div>
+
+    <div>
+        <!-- <head> -->
+        <style>
+            #myheader {color: red;}
+        </style>
+        <!-- </head> -->
+        <!-- <body> -->
+        <h1 id="myheader">My Home Page</h1>
+        <!-- </body> -->
+
+        <!-- <head> -->
+        <style>
+            #special {
+                color: blue;
+            }
+        </style>
+        <!-- </head> -->
+        <!-- <body> -->
+        <p id="special">My paragraph</p>
+        <!-- </body> -->
+    </div>
+
+    <div class="Iframes">
+        <iframe src="https://www.w3schools.com"></iframe>
+
+        <iframe src="https://www.w3schools.com" width="500"></iframe>
+
+        <iframe src="https://www.w3schools.com" style="border:none;"></iframe>
+
+        <iframe src="default.html"></iframe>
+    </div>
+
+    <div class="scripts">
+        <!-- <body> -->
+        <p id="demo">Hi.</p>
+        <script>
+            document.getElementById("demo").innerHTML = "Hello World!";
+        </script>
+        <!-- </body> -->
+
+        <!-- <body> -->
+        <p id="demo">Hi.</p>
+        <script>
+            document.getElementById("demo").style.fontSize = "40px";
+        </script>
+        <!-- </body> -->
+
+        <!-- <body> -->
+        <p id="demo">Hi.</p>
+        <script>
+            document.getElementById("demo").style.color = "red";
+        </script>
+        <!-- </body> -->
+
+        <!-- <body> -->
+        <img id="demo" src="scream.png">
+        <script>
+            document.getElementById("demo").src = "smiley.gif"
+        </script>
+        <!-- </body> -->
+    </div>
+
+    <div class="computercode">
+        <p>Code example: <code>var person;</code></p>
+
+        <p>Code example:</p>
+        <pre><code>var person = {
+            firstName: "John",
+            lastName: "Doe"
+        }</code></pre>
+
+        <p>A simple math equation: <var>x</var> = 3 + 2; </p>
+    </div>
+
+    <div class="forms">
+        <form>
+            <input type="button" value="OK">
+        </form>
+
+        <form>
+            <input type="radio" name="fav_language" value="html"> HTML
+            <input type="radio" name="fav_language" value="css"> CSS
+        </form>
+    </div>
+
+    <div class="formAttributes">
+        <form action="/action_page.php">
+            Name: <input type="text" name="name">
+            <input type="submit">
+        </form>
+
+        <form action="/action_page.php" method="POST">
+            Name: <input type="text" name="name">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class="formElements">
+        <form action="/action_page.php">
+            <select name="cars">
+            </select>
+        </form>
+
+        <form action="/action_page.php">
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="ford">Ford</option>
+            </select>
+        </form>
+
+        <form action="/action_page.php">
+            <textarea name="note"></textarea>
+        </form>
+    </div>
+
+    <div class="inputTypes">
+        <form action="/action_page.php">
+            <input type="text" name="username">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" name="username">
+            <input type="submit" value="submit form">
+        </form>
+
+        <form action="/action_page.php">
+            Favorite color:
+            Blue
+            <input value="blue" type="radio" name="color">
+            Red
+            <input value="red" type="radio" name="color">
+            <input type="submit">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="button" value="Click Me">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="number" min="1" max="5">
+        </form>
+    </div>
+        
+    <div class="inputAttributes">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Your name here.">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" disabled>
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" maxlength="40">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" readonly>
+        </form>
     </div>
 </body>
 </html>
